@@ -14,21 +14,26 @@ function preload()
 function setup() {
 	createCanvas(800, 700);
 
-    engine = Engine.create();
+
+	engine = Engine.create();
 	world = engine.world;
 
-    paper. new Paper(100,200,30,45);
+    paper new Paper(100,200,50,50);
+
 
 	Engine.run(engine);
+  
 }
+
 
 function draw() {
   rectMode(CENTER);
   background(0);
-  
-  paper.display();
 
+  paper.display();
+  
   drawSprites();
+ 
 }
 
 
